@@ -27,13 +27,15 @@ function longPlaneteerCalls(words) {
   }
 }
 
-function findTheCheese (foods) {
-  var cheese = ['cheddar', 'gouda', 'camembert'];
-  for (var i=0; i<foods.length; i++) {
-    var cheeseindex = cheese.indexOf(foods[i]);
-    if (cheeseindex !== -1) {
-     return foods[i]; 
+function findTheCheese(foods) {
+  for (var i=0; i<foods.length; i++){
+    if (foods[i] === 'cheddar' ||
+        foods[i] === 'gouda' ||
+        foods[i] === 'camembert') {
+      return foods[i];
     }
   }
-  return "no cheese!";
+  return 'no cheese!';
 }
+
+//This is my preferred method. The code is clean & simple. It iterates through each words in the 'foods' array. The if statement returns a value - if the current iterated value in the 'foods' array is either 'cheddar, camembert or gouda' then it will return that current value (marked as i) in question. If none of the conditions in the if statement are met, return 'no cheese!'. Simple!
