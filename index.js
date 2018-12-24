@@ -9,7 +9,7 @@ function dwarfRollCall(dwarves) {
 function dwarfRollCall(dwarves) {
    var array = [];
    
-   for(var i = 0; i < dwarves.length; i++){
+   for(var i = 0; i < dwarves.length/2; i++){
      
    }
    do {
