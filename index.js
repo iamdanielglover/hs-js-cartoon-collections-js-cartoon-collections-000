@@ -8,8 +8,12 @@ function dwarfRollCall(dwarves) {
 
 function dwarfRollCall(dwarves) {
    var array = [];
+   
+   for(var i = 0; i < dwarves.length; i++){
+     
+   }
    do {
-    array.push(`${array.length + 1}. ${dwarves.unshift()} `);
+    array.push(`${array.length + 1}. ${dwarves.pop()} `);
     } while (dwarves.length > dwarves.length/2);
     return array.join("");
 }
