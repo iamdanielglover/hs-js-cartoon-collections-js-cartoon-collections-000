@@ -53,7 +53,9 @@ function findTheCheese(foods) {
 
 //It iterates through each words in the 'foods' array. The if statement returns a value - if the current iterated value in the 'foods' array is either 'cheddar, camembert or gouda' then it will return that current value (marked as i) in question. If none of the conditions in the if statement are met, return 'no cheese!'. Simple!
 
-
+var someFunction = function(){
+  
+}
 
 function startsWithB(words){
   var barray = [];
