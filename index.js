@@ -2,7 +2,15 @@ function dwarfRollCall(dwarves) {
    var array = [];
    do {
     array.push(`${array.length + 1}. ${dwarves.shift()} `);
-    } while (dwarves.length > 0);
+    } while (dwarves.length > dwarves.length/2);
+    return array.join("");
+}
+
+function dwarfRollCall(dwarves) {
+   var array = [];
+   do {
+    array.push(`${array.length + 1}. ${dwarves.unshift()} `);
+    } while (dwarves.length > dwarves.length/2);
     return array.join("");
 }
 
@@ -46,11 +54,15 @@ function findTheCheese(foods) {
 function startsWithB(words){
   var barray = [];
   for (var i = 0; i < words.length; i++) {
-    if (words[i] ===)
+    if (words[i].startWith('b')) {
+      barray.push(words[i]);
+    }
   }
+  return barray;
 }
 
-"brian".startsWith("b")
+"brian".startsWith("b") // true
+"apple".startsWith("b") // false
 
 startsWithB(['brian', 'jill', 'jane']) // ['brian']
 startsWithB(['banana', 'berry', 'cherry']) // ['banana', 'berry']
